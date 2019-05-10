@@ -13,9 +13,7 @@ var save_path = process.argv[3];
  
 fs.readdir(dir_path, function(err, items) {
     // console.log(items);
-    
- 
-    for (var i=0; i<items.length; i++) {
+    for (let i = 0; i < items.length; i++) {
       fs.createReadStream(path.join(dir_path, items[i])).pipe(fs.createWriteStream(path.join(save_path, items[i])));
     }
 });

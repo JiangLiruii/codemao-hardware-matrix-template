@@ -12,12 +12,48 @@
     - Mac `brew install p7zip`  
   6. 下载并解压编程猫客户端  
     - 项目已经集成了脚本（会自动下载和解压），直接使用 `yarn client:init`   -->
-  1. 将客户端所在文件夹拷贝到项目根目录, 并将名字修改为 client
+  <!-- 1. 将客户端所在文件夹拷贝到项目根目录, 并将名字修改为 client
   2. 编译代码  
     `yarn build:prod`  
   3. 拷贝到客户端里面  
     `yarn make:dist`  
-  4. 直接运行 client/源码编辑器  
+  4. 直接运行 client/源码编辑器 -->
+
+
+## 简述
+  厂商只需要写积木的相关配置，然后将此配置放入编程猫提供的"外壳"中，"外壳"可以解析并呈现这些积木，并实现积木对应的功能
+  特别注意：目前“外壳”只有Windows的，以下过程开发只在Windows下才有效，其他环境请联系编程猫
+
+## 实现步骤
+  0. 安装依赖
+  ```
+  yarn install
+  ```
+  1. 下载编程猫"外壳" ==> 解压"外壳" ==> "外壳"重命名为client。此client文件夹会出现在当前根项目中
+  ```
+  yarn client:init
+  ```
+  2. 编译第三方厂商的积木相关代码
+  ```
+  yarn build:prod
+  ```
+  3. 需要用到config.js文件，
+  ``` js
+  // 文件内容是厂商名称和需要用到的第二步产生的压缩代码
+  window.MATRIX_EXT_API_LIST = {
+    "weeemake_elfmini_firmware": "weeemake_elfmini_firmware.js"
+  }
+  ```
+  可由
+  ```
+  yarn make:config
+  ```
+  来自动生成
+  4. 第二步处理好的代码copy到“外壳”中
+  ```
+  yarn make:dist
+  ```
+  5. 打开client(也即) TODO，
 
 
 ## 项目结构

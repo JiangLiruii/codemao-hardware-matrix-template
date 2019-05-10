@@ -28,7 +28,9 @@
     "jquery": "^3.3.1",
     "min-md5": "^1.0.0",
     "q": "^1.5.1",
-    "semver": "^5.6.0"
+    "semver": "^5.6.0",
+    "shelljs": "^0.8.3",
+    "unzip-stream": "^0.3.0"
   },
   "scripts": {
     "build:ts": "npm run clean && npm run lint && tsc",
