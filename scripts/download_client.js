@@ -2,7 +2,10 @@ const request = require('request');
 const fs = require('fs');
 const ProgressBar = require('progress');
 
-const download_url = 'https://public-static-edu.codemao.cn/matrix/public/client_for_template.zip?' + Math.random();
+/**
+ *  platform: win32/darwin
+ */
+const download_url = `https://public-static-edu.codemao.cn/matrix/public/client_for_template_${process.platform}.zip?` + Math.random();
 
 function downloadFile(option) {
   const req = request({

@@ -1,42 +1,23 @@
 const path = require('path');
 const fs = require('fs');
-const unzip = require('unzip-stream');
 const shell = require('shelljs');
 
-// TODO，解压过程可能有中文编码问题
-function unzipFile(payload) {
-  console.log('开始解压');
-  return new Promise(function (resolve, reject) {
-    if (fs.existsSync(payload.save_path)) {
-      fs.createReadStream(payload.save_path)
-        .on('error', function (err) {
-          reject(err);
-        })
-        .on('end', function () {
-          if (fs.existsSync(payload.unzip_path)) {
+const save_path = path.join(__dirname, '../client.zip');
+const unzip_path = path.join(__dirname, '..');
+const extractCMD = `.\\scripts\\7z.exe x ${save_path} -o${unzip_path} -aoa -sccUTF-8`;
 
-            if (process.platform !== 'win32') {
-              shell.exec("chmod -R 755 " + payload.unzip_path);
-            }
-            resolve('解压完成');
-          } else {
-            console.log('文件不存在');
-          }
-        })
-        .pipe(unzip.Extract({ path: payload.unzip_path }));
-    } else {
-      reject('解压错误');
+function unzipFile() {
+  return new Promise(function (resolve, reject) {
+    if(shell.exec(extractCMD).code !== 0) {
+      reject('[ERR] Failed')
+    }else{
+      resolve('[Done] SUCCESS')
     }
   });
 }
 
-unzipFile(
-  {
-    save_path: path.join(__dirname, '../client.zip'),
-    unzip_path: path.join(__dirname, '..'),
-  }
-).then((data) => {
+unzipFile().then((data) => {
   console.log(data);
 }).catch((err) => {
-  throw err;
+  console.log(err)
 });

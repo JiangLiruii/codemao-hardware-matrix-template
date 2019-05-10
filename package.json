@@ -33,13 +33,12 @@
     "unzip-stream": "^0.3.0"
   },
   "scripts": {
-    "build:ts": "npm run clean && npm run lint && tsc",
-    "clean": "rimraf ./build && rimraf ./dist",
+    "client:init": "node ./scripts/download_client.js && node ./scripts/extract_client.js",
     "build:dev": "npm run clean && webpack --mode development --config webpack.config.js --progress",
     "build:prod": "npm run clean && webpack --mode production --config webpack.config.js -p --progress",
     "make:config": "rimraf ./dist/list.js && node ./scripts/make_config.js ./dist",
     "make:dist": "node ./scripts/make_dist.js ./dist ./client/build/asset/hardware/matrix/",
-    "client:init": "node ./scripts/download_client.js && node ./scripts/extract_client.js",
-    "publish:test": "qshell qupload .qiniu.upload.conf"
+    "build:ts": "npm run clean && npm run lint && tsc",
+    "clean": "rimraf ./build && rimraf ./dist"
   }
 }
