@@ -5,7 +5,6 @@
 "@types/jquery@^3.3.29":
   version "3.3.29"
   resolved "http://registry.npm.taobao.org/@types/jquery/download/@types/jquery-3.3.29.tgz#680a2219ce3c9250483722fccf5570d1e2d08abd"
-  integrity sha1-aAoiGc48klBINyL8z1Vw0eLQir0=
   dependencies:
     "@types/sizzle" "*"
 
@@ -28,12 +27,10 @@
 "@types/semver@^5.5.0":
   version "5.5.0"
   resolved "http://registry.npm.taobao.org/@types/semver/download/@types/semver-5.5.0.tgz#146c2a29ee7d3bae4bf2fcb274636e264c813c45"
-  integrity sha1-FGwqKe59O65L8vyydGNuJkyBPEU=
 
 "@types/sizzle@*":
   version "2.3.2"
   resolved "http://registry.npm.taobao.org/@types/sizzle/download/@types/sizzle-2.3.2.tgz#a811b8c18e2babab7d542b3365887ae2e4d9de47"
-  integrity sha1-qBG4wY4rq6t9VCszZYh64uTZ3kc=
 
 "@types/tough-cookie@*":
   version "2.3.4"
@@ -848,7 +845,6 @@ binary-extensions@^1.0.0:
 binary@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npm.taobao.org/binary/download/binary-0.3.0.tgz#9f60553bc5ce8c3386f3b553cff47462adecaa79"
-  integrity sha1-n2BVO8XOjDOG87VTz/R0Yq3sqnk=
   dependencies:
     buffers "~0.1.1"
     chainsaw "~0.1.0"
@@ -974,7 +970,6 @@ buffer@^4.3.0:
 buffers@~0.1.1:
   version "0.1.1"
   resolved "https://registry.npm.taobao.org/buffers/download/buffers-0.1.1.tgz#b24579c3bed4d6d396aeee6d9a8ae7f5482ab7bb"
-  integrity sha1-skV5w77U1tOWru5tmorn9Ugqt7s=
 
 builtin-modules@^1.1.1:
   version "1.1.1"
@@ -1043,7 +1038,6 @@ caseless@~0.12.0:
 chainsaw@~0.1.0:
   version "0.1.0"
   resolved "https://registry.npm.taobao.org/chainsaw/download/chainsaw-0.1.0.tgz#5eab50b28afe58074d0d58291388828b5e5fbc98"
-  integrity sha1-XqtQsor+WAdNDVgpE4iCi15fvJg=
   dependencies:
     traverse ">=0.3.0 <0.4"
 
@@ -1262,7 +1256,6 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
 cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
   resolved "https://registry.npm.taobao.org/cross-spawn/download/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
-  integrity sha1-Sl7Hxk364iw6FBJNus3uhG2Ay8Q=
   dependencies:
     nice-try "^1.0.4"
     path-key "^2.0.1"
@@ -1812,7 +1805,6 @@ glob-parent@^3.1.0:
 glob@^7.0.0:
   version "7.1.4"
   resolved "https://registry.npm.taobao.org/glob/download/glob-7.1.4.tgz#aa608a2f6c577ad357e1ae5a5c26d9a8d1969255"
-  integrity sha1-qmCKL2xXetNX4a5aXCbZqNGWklU=
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
@@ -2051,7 +2043,6 @@ ini@~1.3.0:
 interpret@^1.0.0:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/interpret/download/interpret-1.2.0.tgz#d5061a6224be58e8083985f5014d844359576296"
-  integrity sha1-1QYaYiS+WOgIOYX1AU2EQ1lXYpY=
 
 interpret@^1.1.0:
   version "1.1.0"
@@ -2236,7 +2227,6 @@ isstream@~0.1.2:
 jquery@^3.3.1:
   version "3.3.1"
   resolved "http://registry.npm.taobao.org/jquery/download/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
-  integrity sha1-lYzinoHJeQ8xvneS311NlfxX+8o=
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
@@ -2471,7 +2461,6 @@ mimic-fn@^1.0.0:
 min-md5@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/min-md5/download/min-md5-1.0.0.tgz#eb8e0c2f8d15b0a5092bc1d3b5804ccf017ee848"
-  integrity sha1-644ML40VsKUJK8HTtYBMzwF+6Eg=
 
 minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"
@@ -2596,7 +2585,6 @@ no-case@^2.2.0:
 node-7z@^0.4.0:
   version "0.4.0"
   resolved "https://registry.npm.taobao.org/node-7z/download/node-7z-0.4.0.tgz#390124c580183cabd388d137f30b239b44bd59a8"
-  integrity sha1-OQEkxYAYPKvTiNE38wsjm0S9Wag=
   dependencies:
     when "^3.4.4"
     win-spawn "^2.0.0"
@@ -3080,7 +3068,6 @@ readdirp@^2.0.0:
 rechoir@^0.6.2:
   version "0.6.2"
   resolved "https://registry.npm.taobao.org/rechoir/download/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
-  integrity sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=
   dependencies:
     resolve "^1.1.6"
 
@@ -3157,10 +3144,9 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-request@^2.74.0, request@^2.88.0:
+request@^2.74.0:
   version "2.88.0"
   resolved "https://registry.npm.taobao.org/request/download/request-2.88.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frequest%2Fdownload%2Frequest-2.88.0.tgz#9c2fca4f7d35b592efe57c7f0a55e81052124fef"
-  integrity sha1-nC/KT301tZLv5Xx/ClXoEFIST+8=
   dependencies:
     aws-sign2 "~0.7.0"
     aws4 "^1.8.0"
@@ -3208,7 +3194,6 @@ resolve-url@^0.2.1:
 resolve@^1.1.6:
   version "1.10.1"
   resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.10.1.tgz#664842ac960795bbe758221cdccda61fb64b5f18"
-  integrity sha1-ZkhCrJYHlbvnWCIc3M2mH7ZLXxg=
   dependencies:
     path-parse "^1.0.6"
 
@@ -3328,7 +3313,6 @@ shebang-regex@^1.0.0:
 shelljs@^0.8.3:
   version "0.8.3"
   resolved "https://registry.npm.taobao.org/shelljs/download/shelljs-0.8.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fshelljs%2Fdownload%2Fshelljs-0.8.3.tgz#a7f3319520ebf09ee81275b2368adb286659b097"
-  integrity sha1-p/MxlSDr8J7oEnWyNorbKGZZsJc=
   dependencies:
     glob "^7.0.0"
     interpret "^1.0.0"
@@ -3653,7 +3637,6 @@ tough-cookie@~2.4.3:
 "traverse@>=0.3.0 <0.4":
   version "0.3.9"
   resolved "https://registry.npm.taobao.org/traverse/download/traverse-0.3.9.tgz#717b8f220cc0bb7b44e40514c22b2e8bbc70d8b9"
-  integrity sha1-cXuPIgzAu3tE5AUUwisui7xw2Lk=
 
 trim-right@^1.0.1:
   version "1.0.1"
@@ -3760,7 +3743,6 @@ unset-value@^1.0.0:
 unzip-stream@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npm.taobao.org/unzip-stream/download/unzip-stream-0.3.0.tgz#c30c054cd6b0d64b13a23cd3ece911eb0b2b52d8"
-  integrity sha1-wwwFTNaw1ksTojzT7OkR6wsrUtg=
   dependencies:
     binary "^0.3.0"
     mkdirp "^0.5.1"
@@ -3913,7 +3895,6 @@ webpack@^4.21.0:
 when@^3.4.4:
   version "3.7.8"
   resolved "https://registry.npm.taobao.org/when/download/when-3.7.8.tgz#c7130b6a7ea04693e842cdc9e7a1f2aa39a39f82"
-  integrity sha1-xxMLan6gRpPoQs3J56Hyqjmjn4I=
 
 which-module@^2.0.0:
   version "2.0.0"
@@ -3934,7 +3915,6 @@ wide-align@^1.1.0:
 win-spawn@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/win-spawn/download/win-spawn-2.0.0.tgz#397a29130ec98d0aa0bc86baa4621393effd0b07"
-  integrity sha1-OXopEw7JjQqgvIa6pGITk+/9Cwc=
 
 worker-farm@^1.5.2:
   version "1.6.0"
