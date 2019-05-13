@@ -39,6 +39,7 @@
     "make:config": "node ./scripts/make_config.js ",
     "make:dist": "node ./scripts/make_dist.js ",
     "build:ts": "npm run clean && npm run lint && tsc",
-    "clean": "rm -rf ./build && rm -rf ./dist"
+    "clean": "rimraf ./build && rimraf ./dist",
+    "auto_build:prod":"yarn build:prod && yarn make:config &&  yarn make:dist"
   }
 }

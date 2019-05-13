@@ -7,7 +7,10 @@ const list_js_path = './dist/list.js';
 let file_list_config = {};
 
 function generate_list_js(){
-  console.log('----------------------------------');
+  console.log(`
+
+---- make list.js ----------------
+  `);
   if(!fs.existsSync(dist_path)){
     console.log(`
 [Err] path not found!

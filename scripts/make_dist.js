@@ -6,7 +6,9 @@ const list_path_win32 = './client/build/asset/hardware/matrix/';
 const list_path_darwin = './client/源码智造编辑器.app/Contents/Resources/app.nw/build/asset/hardware/matrix/';
 
 function flash_client_list_js() {
-  console.log('----------------------------------');
+  console.log(`
+---- set resources ---------------
+......`);
   if (!fs.existsSync(dist_path)) {
     console.log(`
 [Err] path not found!
@@ -24,6 +26,10 @@ function flash_client_list_js() {
               path.join(process.platform === 'win32' ? list_path_win32 : list_path_darwin, items[i])
             ));
         }
+        console.log(`
+[Done] OK.
+----------------------------------
+        `)
       }
     });
   }
